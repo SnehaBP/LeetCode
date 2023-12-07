@@ -1,5 +1,9 @@
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         m=max(nums)
         n=min(nums)
         flag=0
@@ -12,4 +16,3 @@ class Solution:
             return 0
         else:
             return m+1
-            
