@@ -17,5 +17,8 @@ class Solution:
         freequency={}
         inorderTraversal(root,freequency)
         maxValue=max(freequency.values())
-        modes = [key for key, value in freequency.items() if value == maxValue]
+        modes=[]
+        for key,value in freequency.items():
+            if value==maxValue:
+                modes.append(key)
         return modes
