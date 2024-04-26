@@ -14,5 +14,4 @@ class Solution:
                 res.append(int(encryptedNum))
             else:
                 res.append(int(ele))
-        print(res)
         return sum(res)                    
