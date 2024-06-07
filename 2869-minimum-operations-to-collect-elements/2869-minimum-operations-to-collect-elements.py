@@ -3,7 +3,6 @@ class Solution:
         numsRemoved = []
         for i in range(len(nums)-1 , -1, -1):
             numsRemoved.append(nums[i])
-            print(numsRemoved)
             flag = 0
             for j in range(1 , k+1):
                 if j not in numsRemoved:
